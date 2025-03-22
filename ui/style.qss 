@@ -1,0 +1,199 @@
+/* Main application style sheet */
+
+/* Global styles */
+QWidget {
+    font-family: "Microsoft JhengHei UI", "PingFang TC", "Noto Sans TC", sans-serif;
+    font-size: 10pt;
+}
+
+/* Main window */
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+/* Group boxes */
+QGroupBox {
+    font-weight: bold;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+    background-color: #f0f0f0;
+}
+
+/* Labels */
+QLabel {
+    color: #333;
+}
+
+/* Input fields */
+QLineEdit, QDateEdit, QComboBox {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    selection-background-color: #4a7dff;
+}
+
+QLineEdit:focus, QDateEdit:focus, QComboBox:focus {
+    border: 1px solid #4a7dff;
+}
+
+QLineEdit:hover, QDateEdit:hover, QComboBox:hover {
+    border: 1px solid #999;
+}
+
+/* Combobox */
+QComboBox {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    min-width: 6em;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #ccc;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/dropdown.png);
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #ccc;
+    selection-background-color: #4a7dff;
+    selection-color: white;
+    background-color: white;
+}
+
+/* Date edit */
+QDateEdit {
+    padding-right: 20px;
+}
+
+QCalendarWidget {
+    background-color: white;
+    color: #333;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: white;
+    color: #333;
+    selection-background-color: #4a7dff;
+    selection-color: white;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #f7f7f7;
+}
+
+/* Radio buttons and checkboxes */
+QRadioButton, QCheckBox {
+    spacing: 8px;
+}
+
+QRadioButton::indicator, QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator:checked, QCheckBox::indicator:checked {
+    background-color: #4a7dff;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+QTabBar::tab {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+    border-bottom: none;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #eaeaea;
+}
+
+/* Scroll bars */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f0f0f0;
+    width: 12px;
+    margin: 12px 0px 12px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #c0c0c0;
+    min-height: 30px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #a0a0a0;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 12px;
+    background-color: #f0f0f0;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+    subcontrol-position: bottom;
+}
+
+QScrollBar::sub-line:vertical {
+    subcontrol-position: top;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #f0f0f0;
+    height: 12px;
+    margin: 0px 12px 0px 12px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #c0c0c0;
+    min-width: 30px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #a0a0a0;
+}
+
+/* Text edit */
+QTextEdit {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    selection-background-color: #4a7dff;
+}
